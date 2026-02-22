@@ -5,6 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link href="fonts/fonts.css" rel="stylesheet" />
+    <link href="styles/global.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+
+    <header class="header">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#" class="menu__link">главная</a></li>
+          <li class="menu__item"><a href="#lots" class="menu__link">посмотреть лоты</a></li>
+          <li class="menu__item"><a href="#about" class="menu__link">об аукционе</a></li>
+        </ul>
+      </nav>
+
+      <a class="logo">
+        <img src="images/logo-black.svg" alt="Оно тебе надо" />
+      </a>
+
+      <address class="address header__address">
+        <a href="tel:+99995555555" class="address__link">+9 999 555 5555</a>
+        <br />
+        <a href="mailto:info@sobaka.ge" class="address__link">info@sobaka.ge</a>
+        <br />
+        наб. Принсенграхт 263-265, Амстердам
+      </address>
+    </header>
+
+    <main>
+
+      <section class="cover">
+        <div class="overlay"></div>
+        <div class="cover__content">
+          <h1 class="cover__title">
+            <span class="cover__title-word cover__title-word_align_left">Оно</span>
+            <span class="cover__title-word cover__title-word_align_center">тебе</span>
+            <span class="cover__title-word cover__title-word_align_right">надо</span>
+          </h1>
+          <div class="description">
+            <p class="description__subtitle">Аукцион вещей, в которые никто не верил</p>
+            <button class="button">Сделать ставку</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="lots" id="lots">
+        <h2 class="lots__title">Лоты</h2>
+        <ul class="lots__list">
+          <li class="lots__item">
+            <a href="#" class="lots__card-link">
+              <article class="card card_lot_01">
+                <div class="overlay"></div>
+                <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+                <p class="card__description">Не просто бросил, а ушёл с первой лекции. Поначалу Йонас Кюссу не верили, что самоучка без специального образования сможет снять что-то путёвое. Пока он не познакомился со Стивеном Спилбергом.</p>
+              </article>
+            </a>
+          </li>
+          <li class="lots__item">
+            <a href="#" class="lots__card-link">
+              <article class="card card_lot_02">
+                <div class="overlay"></div>
+                <h3 class="card__title">Книга, где описан один скучный день из жизни дипломатического агента</h3>
+                <p class="card__description">Обычный роман о банальном переводе шпионов. Описан один скучный день из жизни дипломатического агента с нескольких точек зрения одновременно. В 1904 году этот бестселлер вышел ничтожным тиражом.</p>
+              </article>
+            </a>
+          </li>
+          <li class="lots__item">
+            <a href="#" class="lots__card-link">
+              <article class="card card_lot_03">
+                <div class="overlay"></div>
+                <h3 class="card__title">Картина, которую повторит даже 5-летний сын мамочкиной подруги</h3>
+                <p class="card__description">Не удивительно. Тем более, тут не покупали. Поначалу тут говорили, что так не принято. Но постепенно они поставили картину в своём родном городе, и с тех пор она объехала весь мир.</p>
+              </article>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="lots__more-link">посмотреть больше</a>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about__logo-col">
+          <div class="about__logo-circle">
+            <img src="images/logo-white.svg" alt="Логотип" />
+          </div>
+        </div>
+        <div class="about__content">
+          <h2 class="about__title">Об аукционе</h2>
+          <p class="about__text">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+          <p class="about__text">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <address class="address">
+        <a href="tel:+99995555555" class="address__link">+9 999 555 5555</a>
+        <br />
+        <a href="mailto:info@sobaka.ge" class="address__link">info@sobaka.ge</a>
+        <br />
+        наб. Принсенграхт 263-265, Амстердам
+      </address>
+
+      <nav class="menu footer__menu">
+        <ul class="menu__list footer__menu-list">
+          <li class="menu__item"><a href="#" class="menu__link">главная</a></li>
+          <li class="menu__item"><a href="#lots" class="menu__link">посмотреть лоты</a></li>
+          <li class="menu__item"><a href="#about" class="menu__link">об аукционе</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <img src="images/yt.svg" alt="YouTube" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <img src="images/vk.svg" alt="ВКонтакте" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <img src="images/pinterest.svg" alt="Pinterest" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+  </body>
 </html>
