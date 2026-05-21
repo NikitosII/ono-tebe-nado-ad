@@ -1,6 +1,7 @@
 /* ========================================================
    HEADER
-   ======================================================== */
+   ======================================================== 
+*/
 
 .header {
   display: grid;
@@ -9,13 +10,11 @@
   padding: 28px 0;
 }
 
-/* Logo */
 .logo {
   display: block;
   width: 148px;
 }
 
-/* Navigation menu */
 .menu__list {
   display: flex;
   gap: 20px;
@@ -25,12 +24,15 @@
   list-style: circle inside;
 }
 
-.menu__link {
-  text-decoration: none;
-  font-size: 18px;
+.menu__item:first-child {
+  list-style: none;
 }
 
-/* Address block */
+.menu__link {
+  text-decoration: none;
+  font-size: 14px;
+}
+
 .address {
   font-style: normal;
   font-size: 14px;
@@ -38,7 +40,6 @@
   max-width: 200px;
 }
 
-/* Header address — pushed to the right column edge */
 .header__address {
   justify-self: end;
 }
@@ -46,7 +47,8 @@
 
 /* ========================================================
    SHARED: OVERLAY
-   ======================================================== */
+   ======================================================== 
+*/
 
 .overlay {
   position: absolute;
@@ -61,14 +63,15 @@
 
 /* ========================================================
    COVER (Hero section)
-   ======================================================== */
+   ======================================================== 
+*/
 
 .cover {
   position: relative;
   background-image: url('../images/cover.jpg');
   background-size: cover;
   background-position: center;
-  padding: 115px 0 100px;
+  padding: 90px 0 80px;
   color: #fff;
 }
 
@@ -100,7 +103,6 @@
   text-align: right;
 }
 
-/* Description: subtitle on left, button on right */
 .description {
   display: flex;
   justify-content: space-between;
@@ -128,7 +130,8 @@
 
 /* ========================================================
    LOTS SECTION
-   ======================================================== */
+   ======================================================== 
+*/
 
 .lots {
   padding: 60px 0 50px;
@@ -138,32 +141,34 @@
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
 }
 
 /* Cards list */
 .lots__list {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
 }
 
 .lots__item {
-  width: calc((100% - 40px) / 3);
-  min-height: 500px;
+  width: calc((100% - 60px) / 3);
+  min-height: 640px;
+  list-style: none;      
+  display: flex;         
+  flex-direction: column;
 }
 
-/* Card link wrapper */
 .lots__card-link {
-  display: block;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   text-decoration: none;
 }
 
-/* Card — content flows from top */
 .card {
-  height: 100%;
+  flex: 1;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -186,7 +191,6 @@
   background-image: url('../images/card-lot-03.jpg');
 }
 
-/* All card text sits above the overlay */
 .card__title,
 .card__description,
 .card__price {
@@ -226,25 +230,24 @@
 
 /* ========================================================
    ABOUT SECTION
-   ======================================================== */
+   ======================================================== 
+*/
 
 .about {
   display: grid;
-  /* Left column matches a single card's width; right column fills the rest */
-  grid-template-columns: calc((100% - 40px) / 3) 1fr;
+  grid-template-columns: calc((100% - 60px) / 3) 1fr;
   gap: 30px;
   padding: 60px 0 90px;
 }
 
-/* Left column: centered circle with white logo */
 .about__logo-col {
   display: flex;
   justify-content: center;
 }
 
 .about__logo-circle {
-  width: 260px;
-  height: 260px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   background-color: #000;
   display: flex;
@@ -254,17 +257,14 @@
 }
 
 .about__logo-circle img {
-  width: 150px;
+  width: 160px;
 }
 
-/* Right column */
 .about__title {
   font-size: 56px;
   font-weight: bold;
   text-transform: uppercase;
-  /* Align heading center with circle center:
-     circle 260px → center at 130px; heading ~67px → top at 130 - 33 ≈ 97px */
-  margin-top: 97px;
+  margin-top: 112px;
   margin-bottom: 30px;
 }
 
@@ -280,7 +280,8 @@
 
 /* ========================================================
    FOOTER
-   ======================================================== */
+   ======================================================== 
+*/
 
 .footer {
   display: grid;
@@ -289,7 +290,6 @@
   padding: 50px 0;
 }
 
-/* Footer menu — text and items centered */
 .footer__menu-list {
   justify-content: center;
   flex-direction: column;
@@ -305,7 +305,6 @@
   text-decoration: underline;
 }
 
-/* Social icons list */
 .social {
   display: flex;
   gap: 20px;
@@ -315,7 +314,16 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.social__link img {
+  width: 20px;
+  height: 20px;
 }
