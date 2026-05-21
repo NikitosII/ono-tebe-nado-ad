@@ -71,7 +71,7 @@
   background-image: url('../images/cover.jpg');
   background-size: cover;
   background-position: center;
-  padding: 90px 0 80px;
+  padding: 115px 0 100px;
   color: #fff;
 }
 
@@ -141,22 +141,22 @@
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 /* Cards list */
 .lots__list {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 .lots__item {
-  width: calc((100% - 60px) / 3);
-  min-height: 640px;
-  list-style: none;      
-  display: flex;         
+  width: calc((100% - 40px) / 3);
+  min-height: 500px;
+  list-style: none;
+  display: flex;
   flex-direction: column;
 }
 
@@ -235,7 +235,7 @@
 
 .about {
   display: grid;
-  grid-template-columns: calc((100% - 60px) / 3) 1fr;
+  grid-template-columns: calc((100% - 40px) / 3) 1fr;
   gap: 30px;
   padding: 60px 0 90px;
 }
@@ -246,8 +246,8 @@
 }
 
 .about__logo-circle {
-  width: 280px;
-  height: 280px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   background-color: #000;
   display: flex;
@@ -257,14 +257,14 @@
 }
 
 .about__logo-circle img {
-  width: 160px;
+  width: 150px;
 }
 
 .about__title {
   font-size: 56px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 112px;
+  margin-top: 97px;
   margin-bottom: 30px;
 }
 
