@@ -1,3 +1,5 @@
+https://github.com/NikitosII/ono-tebe-nado-ad.git
+
 # Оно тебе надо
 
 Учебный проект — вёрстка лендинга аукциона вещей.
